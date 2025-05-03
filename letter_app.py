@@ -3,7 +3,7 @@ import base64
 
 # 1. 헬로키티 폰트 파일 로드 및 스타일 적용
 def load_hellokitty_font():
-    font_path = "./헬로키티체.ttf"  # 업로드한 폰트 파일 경로
+    font_path = "/mnt/data/헬로키티체.ttf"  # 업로드한 폰트 파일 경로
     with open(font_path, "rb") as f:
         encoded = base64.b64encode(f.read()).decode()
         return f"""
